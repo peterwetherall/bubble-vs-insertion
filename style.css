@@ -1,0 +1,34 @@
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+body, html, canvas {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.key {
+	position: fixed;
+	z-index: 12;
+	left: 20px;
+	top: 20px;
+}
+.axis-y {
+	text-align: center;
+	position: fixed;
+	z-index: 12;
+	left: -20px;
+	width: 100px;
+	top: calc(50% - 50px);
+	transform: rotate(-90deg);
+}
+canvas {
+	cursor: pointer;
+}
